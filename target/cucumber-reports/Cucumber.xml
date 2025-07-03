@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.127" tests="11" skipped="0" failures="0" errors="0">
+<testcase classname="E-commerce Order Pricing Promotions" name="Single product without promotions" time="0.016">
+<system-out><![CDATA[
+Given no promotions are applied.............................................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Order Pricing Promotions" name="Threshold discount applies when subtotal reaches 1000" time="0.002">
+<system-out><![CDATA[
+Given the threshold discount promotion is configured:.......................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Order Pricing Promotions" name="Buy-one-get-one for cosmetics - multiple products" time="0.001">
+<system-out><![CDATA[
+Given the buy one get one promotion for cosmetics is active.................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Order Pricing Promotions" name="Buy-one-get-one for cosmetics - same product twice" time="0.002">
+<system-out><![CDATA[
+Given the buy one get one promotion for cosmetics is active.................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Order Pricing Promotions" name="Buy-one-get-one for cosmetics - mixed categories" time="0.001">
+<system-out><![CDATA[
+Given the buy one get one promotion for cosmetics is active.................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Order Pricing Promotions" name="Multiple promotions stacked" time="0.001">
+<system-out><![CDATA[
+Given the threshold discount promotion is configured:.......................passed
+And the buy one get one promotion for cosmetics is active...................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Double Eleven discount" name="雙十一優惠 - 購買12件同種商品享有部分折扣" time="0.002">
+<system-out><![CDATA[
+Given 雙十一優惠活動已啟動............................................................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Double Eleven discount" name="雙十一優惠 - 購買27件同種商品享有多層折扣" time="0.001">
+<system-out><![CDATA[
+Given 雙十一優惠活動已啟動............................................................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Double Eleven discount" name="雙十一優惠 - 購買10種不同商品各1件不享有折扣" time="0">
+<system-out><![CDATA[
+Given 雙十一優惠活動已啟動............................................................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Double Eleven discount" name="雙十一優惠 - 混合商品部分享有折扣" time="0">
+<system-out><![CDATA[
+Given 雙十一優惠活動已啟動............................................................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="E-commerce Double Eleven discount" name="雙十一優惠與門檻折扣疊加" time="0">
+<system-out><![CDATA[
+Given 雙十一優惠活動已啟動............................................................passed
+And the threshold discount promotion is configured:.........................passed
+When a customer places an order with:.......................................passed
+Then the order summary should be:...........................................passed
+And the customer should receive:............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
